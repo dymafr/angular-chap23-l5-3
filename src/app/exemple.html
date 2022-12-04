@@ -1,0 +1,42 @@
+<button mat-button [matMenuTriggerFor]="boissons">Menu</button>
+
+<mat-menu #boissons="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="sucrees">Boissons sucrées</button>
+  <button mat-menu-item [matMenuTriggerFor]="sansSucre">
+    Boissons sans sucre
+  </button>
+</mat-menu>
+
+<mat-menu #sucrees="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="fraiches">
+    Boissons fraîches
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="jusDeFruits">Jus de fruits</button>
+  <button mat-menu-item [matMenuTriggerFor]="chaudes">Boissons chaudes</button>
+</mat-menu>
+
+<mat-menu #sansSucre="matMenu">
+  <button mat-menu-item>Lait</button>
+  <button mat-menu-item>Café</button>
+  <button mat-menu-item>Thé</button>
+  <button mat-menu-item>Champagne</button>
+</mat-menu>
+
+<mat-menu #fraiches="matMenu">
+  <button mat-menu-item>Coca</button>
+  <button mat-menu-item>Ice Tea</button>
+  <button mat-menu-item>Bière</button>
+</mat-menu>
+
+<mat-menu #jusDeFruits="matMenu">
+  <button mat-menu-item>Orangina</button>
+  <button mat-menu-item>
+    Jus d'orange avec pulpe, sans conservateur, sans sucres ajoutés, 100% pur
+    jus
+  </button>
+</mat-menu>
+
+<mat-menu #chaudes="matMenu">
+  <button mat-menu-item>Chocolat Chaud</button>
+  <button mat-menu-item>Cappuccino</button>
+</mat-menu>
